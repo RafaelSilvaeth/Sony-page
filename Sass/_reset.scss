@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-image: url('../img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $text-color;
+    a {
+        color: $text-color;
+        text-decoration: none;
+        transition: all ease-in-out 0.5s;
+    } ul {
+        list-style: none;
+    }
+}

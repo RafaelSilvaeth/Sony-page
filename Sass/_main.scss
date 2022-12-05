@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    @include container;
+    .header-brand {
+        color: $primary-color;
+        font-size: 3rem;
+    } .header-navbar {
+        ul {
+            height: 100%;
+            @include flex-center;
+        } li {
+            margin: 0 1rem;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        } .active {
+            color: $second-color;
+        } a {
+            &:hover {
+                color: $second-color;
+            }
+        }
+    }   .header-social-media {
+         ul {
+            @include flex-center;
+            height: 100%;
+         } li {
+            margin: 0 1rem;
+         } a {
+            &:hover {
+                color: $primary-color;
+            }
+         }
+    } 
+} 
+
+.gallery {
+    @include flex-center;
+    @include container;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    .gallery-cards {
+        border: solid 1px $second-color;
+        border-radius: 3px;
+        width: 31%;
+        height: 400px;
+        margin-bottom:4%;
+        @include flex-center;
+        flex-direction: column;
+        color: $primary-color;
+        text-align: center;
+    } .gallery-card-title {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    } .gallery-card-btn {
+        padding:0.6rem 2rem;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    } .gallery-card-btn {
+        &:hover {
+            background-color: $primary-color;
+            color: $bg-color; 
+         }
+    } #card-1 {
+        @include bg-image('tlou.jpg')
+    } #card-2 {
+        @include bg-image('GodofWar.jpg')
+    } #card-3 {
+        @include bg-image('thewitcher.jpg')
+    } #card-4 {
+        @include bg-image('ReadDead.jpg')
+    } #card-5 {
+        @include bg-image('GTA.jpg')
+    } #card-6 {
+        @include bg-image('RE2.jpg')
+    } #card-7 {
+        @include bg-image('Spiderman.jpg')
+    } #card-8 {
+        @include bg-image('ghost.png')
+    } #card-9 {
+        @include bg-image('Bloodborne.jpg')
+    }
+ } 
+
+ footer {
+    text-align: center;
+    padding-bottom: 2rem;
+    span {
+        font-weight: bold;
+        color: $second-color;
+    }
+ } 
+
